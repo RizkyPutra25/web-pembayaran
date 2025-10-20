@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username   = "root"; // default XAMPP
-$password   = "";     // default XAMPP kosong
-$dbname     = "wifi_payment"; // ganti sesuai nama database kamu
+$username   = "wifi_user";      // user baru
+$password   = "password123";     // password yang sudah dibuat
+$dbname     = "web_pembayaran";  // database yang baru dibuat
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
