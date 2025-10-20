@@ -1,0 +1,159 @@
+/* Background */
+.auth-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #34db5b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeBg 6s ease-in-out infinite alternate;
+}
+
+/* Container */
+.auth-container {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  width: 360px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.auth-title {
+  margin-bottom: 22px;
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  text-align: left;
+  margin: 8px 0 4px;
+  font-weight: 600;
+  color: #444;
+}
+
+.auth-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+  border: 1px solid #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+/* Button */
+.btn-login {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #2ecc71, #3498db);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+.btn-login:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Error message */
+.error-msg {
+  background: #ffe0e0;
+  color: #c0392b;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  animation: shake 0.3s ease;
+}
+
+/* Footer */
+.auth-footer {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-25px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeBg {
+  from {background: linear-gradient(135deg, #2c3e50, #3498db);}
+  to {background: linear-gradient(135deg, #1e3c72, #2a5298);}
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Tombol Pembayaran */
+.btn-pay {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn-pay:hover {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.btn-pay:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}

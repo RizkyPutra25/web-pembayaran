@@ -1,0 +1,7 @@
+chek struk transaksi langsung di web 
+http://localhost/web-pembayaran/struk.php?order_id=ORDER (sesuakan dngan data basse)
+jika ingin mencoba demonstrasi jlan kn php  ngrok terlebih dahulu 
+php : php -S 127.0.0.1:8000
+ngrok http 8000
+selsai 
+

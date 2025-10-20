@@ -1,0 +1,18 @@
+# Aktifkan rewrite engine
+RewriteEngine On
+
+# Base URL project (penting kalau folder kamu bukan root htdocs)
+RewriteBase /web-pembayaran/
+
+# Rewrite untuk STRUK biar jadi /struk/ORDER-xxx
+RewriteRule ^struk/([A-Za-z0-9\-_]+)$ struk.php?order_id=$1 [L]
+
+# (Opsional) biar bisa akses file PHP tanpa .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# (Opsional) blokir akses langsung ke file sensitif
+<FilesMatch "^(db\.php|config\.php|composer\.json|composer\.lock)$">
+    Require all denied
+</FilesMatch>

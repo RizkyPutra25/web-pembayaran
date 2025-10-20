@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nama": "Paket 1", "kecepatan": "7 Mbps", "harga": 125000 },
+  { "id": 2, "nama": "Paket 2", "kecepatan": "10 Mbps", "harga": 150000 },
+  { "id": 3, "nama": "Paket 3", "kecepatan": "15 Mbps", "harga": 200000 }
+]
